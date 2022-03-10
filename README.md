@@ -11,7 +11,4 @@ Go to directory file of the project and open Terminal then write
 #### ```yarn start``` or ```yarn start```
 
 4. head to localhost:3000 to check out the application
-<<<<<<< HEAD
-=======
 
->>>>>>> d730696fafec8e7f84c3ddccd0160460c6abfd00
