@@ -6,7 +6,6 @@
     min-height: 100vh;
     background-image: url('./components/Views/img/background.png');
     background-repeat: no-repeat;
-    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -94,24 +93,14 @@
 
 .nav li a {
     display: block;
-    /* padding: 20px 20px; */
     text-decoration: none;
     color: rgb(253, 251, 251);
-    /* padding-top: 50px;
-	padding-left: 50px; */
-    /* background-color: #ee6055; */
     justify-content: center;
-    /* padding:10px; */
-
-
-
-
 }
 
 .nav li .a:hover,
 .nav .menu-btn:hover {
     background-color: #f4f4f4;
-
 
 }
 
@@ -247,8 +236,6 @@
     }
 }
 
-
-
 /* ************************************ */
 /* Header1 style */
 * {
@@ -260,9 +247,6 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 1em 1em;
-    /* background-color: burlywood; */
-
 }
 .columns {
     float: left;
@@ -272,8 +256,6 @@
     /* background-color: #9674cb; */
     padding-bottom: 80px;
     /* border: 2px solid rgb(77, 73, 73); */
-
-
 }
 
 .img1 {
@@ -288,7 +270,13 @@
     margin-bottom: 230px;
 }
 
+.grid-container88{
+    height: auto;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
 
+}
 @media only screen and (max-width: 600px) {
     .columns {
         width: 100%;
@@ -298,39 +286,30 @@
 @media only screen and (max-width: 1000px) {
     .columns {
         width: 100%;
-    }
-
-}
-@media screen and (max-width: 1900px) {
-
-    .columns {
-        /* flex: 50%; */
-        padding: 0;
-        border: 1px #333;
         text-align: center;
-        /* border: 2px solid rgb(77, 73, 73); */
-        margin: 0;
+        justify-content: center;
 
     }
-    .columns-text {
-        padding: 0;
-        margin-left: 0;
-        width: 100%;
-
+    section.container2{
+        justify-content: center;
 
     }
 
 }
-@media screen and (max-width: 995px)and (max-width: 997px) {
+@media screen and (max-width: 1300px) {
+
+    .grid-container88{
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 995px){
 
     .columns {
-        /* flex: 50%; */
         padding: 0;
         margin: 0;
         clear: none;
         max-height: none;
-        /* text-align: center; */
-        /* border: 2px solid rgb(77, 73, 73); */
     }
     .columns-text {
         padding: 0;
@@ -439,21 +418,24 @@ h4 {
     .columns {
         width: 100%;
     }
+    .grid-container{
+        width: auto;
+    }
 
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .columns {
         width: 100%;
     }
 
-}
-@media screen and (max-width: 1900px) {
+} */
+/* @media screen and (max-width: 1900px) {
 
     .columns {
         padding: 0;
         border: 1px #333;
         text-align: center;
-        /* border: 2px solid rgb(77, 73, 73); */
+        /* border: 2px solid rgb(77, 73, 73); 
         margin: 0;
 
     }
@@ -465,7 +447,7 @@ h4 {
     .grid-container {
         width: 100%;
     }
-}
+} */
 @media screen and (max-width: 995px)and (max-width: 997px) {
 
     .columns {
@@ -843,7 +825,7 @@ h4 {
 
     }
     .grid-container3 {
-        width: 100%;
+        width: auto;
         display: column;
 
     }
@@ -861,10 +843,6 @@ h4 {
     .grid-item3 {
         padding: 0;
         margin: 0;
-        /* width: 100%;
-        height: 150px;
-        float: left;
-        display: flex; */
 
     }
     .bar {
@@ -1018,12 +996,12 @@ h4 {
 
 
 @media screen and (max-width: 600px) {
-    .columns {
+    /* .columns {
         padding: 0;
         margin: 0;
         text-align: center;
 
-    }
+    } */
     .slide-container2 {
         width: 100%;
         margin: 0;
@@ -1063,40 +1041,26 @@ h4 {
 
 /* ********************************* */
 /* Footer style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 footer {
     background-color: #3e3f3f;
     color: #a7a7a7;
-    font-size: 16px;
-    min-height: 100px;
-    width: 100%;
-    height: 200px;
 
 }
-
-.row {
-    padding: 1em 1em;
-}
-.row.primary {
-    display: grid;
-    /* it's divided to 4 grid but will use 3 only */
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    align-items: stretch;
-}
-.column {
+footer .grid-container{
+    /* height: auto; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
-    min-height: 15em;
+    height: 250px;
+    display: column;
+    grid-template-columns: auto auto auto;
     float: right;
+    flex-direction: column;
 
 }
 
+.grid-item4{
+    padding-top: 40px;
+    /* border:1px solid red; */
+}
 h3 {
     width: 100%;
     text-align: left;
@@ -1105,31 +1069,31 @@ h3 {
     white-space: nowrap;
 }
 .ph2 {
-
-    margin-right: 400px;
+    width: 100%;
+    margin-right: 600px;
     color: #fff;
+
 }
 
 .inputWithButton {
     position: relative;
-    height: auto;
-    width: 570px;
+
 }
 .inputWithButton input {
-    width: 90%;
+    width: 50%;
     height: 45px;
     padding-right: 60px;
     color: rgb(3, 3, 3);
     padding: 8px 40px 8px 40px;
     font-size: 20px;
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
     border: none;
 }
-.inputWithButton button {
+.buttonIn {
     position: absolute;
-    right: 60px;
-    top: 31px;
+    right: 2px;
+    top: -14px;
     color: rgb(250, 248, 248);
     background-color: #ee6055;
     padding: 8px 40px 8px 40px;
@@ -1140,7 +1104,6 @@ h3 {
     font-size: 20px;
 }
 .st {
-    margin: 0%;
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     font-weight: bolder;
@@ -1155,7 +1118,6 @@ h3 {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Anton', sans-serif;
-    text-align: justify;
     margin-left: 300px;
 
 }
@@ -1181,75 +1143,38 @@ h3 {
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1000px) {
-    .column {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    footer {
-        padding: 0;
-        margin: 0;
-        height: auto;
-    }
-    .inputWithButton {
-        position: relative;
-        height: auto;
+@media screen and (max-width: 1600px) {
+    footer .grid-item4{
         width: auto;
-    }
-    .inputWithButton button {
-        position: absolute;
-        padding: 8px 20px 8px 20px;
-        right: 19px
-    }
-    .column.about {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    .st {
-        padding: 0;
-        margin: 0;
-        text-align: left;
+        /* text-align: center; */
+        /* display: inline-block; */
+        flex-wrap: wrap;
 
-    }
-    .Lorem {
-        padding: 0;
-        margin: 0;
-        text-align: left;
-
-
+    
     }
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .row {
-        flex-direction: column;
-        /* width: 100%; */
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-    .column {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
+@media screen and (max-width: 900px) {
     footer {
         padding: 0;
         margin: 0;
+        width: auto;
+        height: 480px;
 
     }
-    .inputWithButton {
+    footer .grid-container{
+        text-align: center;
+        display: inline-block;
+    
+    }
+    .inputWithButton input{
         position: relative;
         height: auto;
-        width: auto;
+        width: 100%;
     }
-    .inputWithButton button {
-        position: absolute;
-        padding: 8px 20px 8px 20px;
-        right: 19px
+    .buttonIn{
+       display: flex;
     }
     .st {
         padding: 0;

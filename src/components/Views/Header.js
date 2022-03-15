@@ -12,7 +12,7 @@ const Section1 = () => {
     <React.Fragment>
       <section className="content-container">
           <div className="columns">
-         <div className="columns-text">
+        <div className="columns-text">
           <p className="advanced">Advanced Platform</p>
           <h1 className="take" > Tack your team <br />
             to the next level
@@ -29,7 +29,7 @@ const Section1 = () => {
           <div className="columns">
           <img alt='' className='img1' src={dash}></img>
         </div>
-      <header className='row'>
+      <header className='grid-container88'>
         <div class='grid-item item5'>
           <a>
             {" "}

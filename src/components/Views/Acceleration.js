@@ -3,7 +3,7 @@ import React from "react";
 const Acceleration = () => {
   return (
     <React.Fragment>
-      <section className="container">
+      <section className="containers">
       {/* <section className='row'> */}
         <div className='columns'>
           <div className="text7">
@@ -28,21 +28,6 @@ const Acceleration = () => {
           </button>
           </div>
         </div>
-        {/* <div className='columns bar2'>
-          <div class='col-3 col-s-3 menu'>
-            <div className='circle'>
-              <div className='num'>1</div>
-            </div>
-            <div className='line'></div>
-            <div className='circle'>
-              <div className='num'>1</div>
-            </div>
-            <div className='line'></div>
-            <div className='circle'>
-              <div className='num'>1</div>
-            </div>
-          </div>
-        </div> */}
         <div className='grid-container3'>
           <div className='grid-item3'>
           <div class='col-3 col-s-3 menu'>

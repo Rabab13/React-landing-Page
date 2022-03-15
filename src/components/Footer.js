@@ -7,8 +7,8 @@ const MenuBar = () => {
   return (
     <footer>
         <div className='footer'>
-          <div class="row primary">
-          <div class="column about">
+          <div class="grid-container">
+          <div class="grid-item4">
             <h3 className='st'>Study</h3>
             <p className='Lorem'>
               Lorem ipsum dolor sit amet,
@@ -18,7 +18,7 @@ const MenuBar = () => {
             </p>
             </div>
             
-            <div class="column about">
+            <div class="grid-item4">
             <h5 className='text-upper'>Nos services</h5>
             <p className='avis'>Avis clients <br />Mentions légale<br />
               Plan du site
@@ -29,13 +29,13 @@ const MenuBar = () => {
             </p>
             </div>
           
-            <div class="column about">
+            <div class="grid-item4">
               <p className='ph2'>
                 <strong>Sign up Special Offers!</strong>
               </p>
               <span  class='inputWithButton'>
                   <input  type='search' placeholder='Mail' rel='search' />
-                  <button>Subscribe</button>
+                  <button className="buttonIn">Subscribe</button>
                 </span>
                 </div>
                 </div>
